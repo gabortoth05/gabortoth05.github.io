@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Gabor Toth | science | frontend</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+	<script>
+	
+	$(window).scroll(function() {
+	  $(".slideanim").each(function(){
+		var pos = $(this).offset().top;
+
+		var winTop = $(window).scrollTop();
+		if (pos < winTop + 600) {
+		  $(this).addClass("slide");
+		}
+	  });
+	});
+
+	</script>
+  
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;
+  }
+  
+  .bg-1 { 
+      background-color: #828793; /* Green */
+	  background-image: url('includes/images/bground.jpg');
+	  background-size: 100% 100%;
+	  max-width: 100%;
+	  height: auto;
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #333; /* Dark Blue */
+	  background-opacity: 0.7;
+      color: #ffffff;
+  }
+  .bg-2 h4{
+	color: #ffffff;
+	text-align: left;
+	margin-left: 14px;
+  }
+  .bg-2 p{
+	color: #ffffff;
+	text-align: left;
+	margin-left: 14px;
+  }
+  
+  .bg-2 ul{
+	list-style: none;
+  }
+  
+  .education{
+	font-size: 0.7em;
+  }
+  
+  .education h4, p{
+	font-size: 1.0em;
+  }
+  
+  
+  .skills{
+	font-size: 0.7em;
+  }
+  
+  .skills h4, p, a{
+	font-size: 1.0em;
+	color: #ffffff;
+  }
+  
+  .skills a:hover{
+	color: #ffffff;
+  }
+  
+  .bg-2 hr{
+	border-color: #f2f2f2;
+  }
+  
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  
+	.slideanim {visibility:hidden;}
+	.slide {
+		/* The name of the animation */
+		animation-name: slide;
+		-webkit-animation-name: slide;
+		/* The duration of the animation */
+		animation-duration: 1s;
+		-webkit-animation-duration: 1s;
+		/* Make the element visible */
+		visibility: visible;
+	}
+
+	/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+	@keyframes slide {
+		0% {
+			opacity: 0;
+			-webkit-transform: translateY(70%);
+		}
+		100% {
+			opacity: 1;
+			-webkit-transform: translateY(0%);
+		}
+	}
+	@-webkit-keyframes slide {
+		0% {
+			opacity: 0;
+			-webkit-transform: translateY(70%);
+		}
+		100% {
+			opacity: 1;
+			-webkit-transform: translateY(0%);
+		}
+	}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <!--<a class="navbar-brand" href="#"></a>-->
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#resume">RESUME</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+		<li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center ">
+  <h3 class="margin">Hi, I'm Gabor,</h3>
+  <img src="includes/images/me.png" class="img-responsive img-circle margin" style="display:inline" alt="GaborToth" width="250" height="250">
+  <h3>Frontend | Science | Data Modeling</h3>
+</div>
+
+<div class="container-fluid bg-2 text-center">
+	<div class="row" id="resume">
+		<div class="col-sm-7 education">
+			<div class="row">
+			<h4> About me </h4>
+			<p>Data and technology driven person who loves to solve problems related to science.
+			<br>Keywords: 
+			web based technologies, climate science, mathematical chaos, physics, astronomy, data analysis, numerical methods</p>
+		<hr>
+			<h4> Education </h4>
+				<ul class="slideanim">
+				<li>
+					<div class="col-sm-3">
+						<h4>2003 - 2007</h4>
+					</div>
+					<div class="col-sm-9">
+						<h4>High School</h4>
+						<p>My favorite solar system competition - 1st prize </p>
+					</div>
+				</li>
+				<li>
+					<div class="col-sm-3">
+						<h4>2007 - 2010</h4>
+					</div>
+					<div class="col-sm-9">
+						<h4>University of Szeged</h4>
+						<p>Physics and astronomy studies</p>
+					</div>
+				</li>
+					<div class="col-sm-3">
+						<h4>2009 - 2012</h4>
+					</div>
+					<div class="col-sm-9">
+						<h4>National Qualifications Register</h4>
+						<p>Web Programmer (with honors)</p>
+					</div>
+				<li>
+				</li>
+				<li>
+					<div class="col-sm-3">
+						<h4>2010 - 2013</h4>
+					</div>
+					<div class="col-sm-9">
+						<h4>University of Pécs</h4>
+					<p>Physics and Computer science studies</p>
+					</div>
+				</li>
+				</ul>
+			<hr>
+				<h4> Experience </h4>
+				<ul class="slideanim">
+					<li>
+						<div class="col-sm-3">
+						<h4><strong>Front-end developer</strong>
+						<br>
+						2015 sept. - nov.</h4>
+						</div>
+						<div class="col-sm-9">
+							<h4>Anyvan - London (UK)</h4>
+							<p>Coordination of web application translations for different European territories. Different kind of projects related
+							to the company’s needs.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="col-sm-3">
+						<h4><strong>Freelancer</strong>
+						<br>
+						2013 - 2015</h4>
+						</div>
+						<div class="col-sm-9">
+							<h4>Win-win Position / Bio Natura Medical /Freelance - assignments
+							</h4>
+							<p>Project based work, in the field of web development, medical device testing, data analysis, data modeling, excel analysis</p>
+						</div>
+					</li>
+					<li>
+						<div class="col-sm-3">
+						<h4><strong>Web producer</strong>
+						<br>
+						2012 aug. - dec.</h4>
+						</div>
+						<div class="col-sm-9">
+							<h4>Association of Hungarian Settlements and Regions Developers</h4>
+							<p>Create, and update the Danubenet conference’s websites. Create mailing lists, html newsletter, Google Analytics campaigns.</p>
+						</div>
+					</li>
+					<li>
+						<div class="col-sm-3">
+						<h4><strong>Intern</strong>
+						<br>
+						2011 jun. - aug.</h4>
+						</div>
+						<div class="col-sm-9">
+							<h4>Hungarian meteorological service</h4>
+							<p>Quantify the uncertainties in global and regional climate model outputs (temperature, precipitation), C++ programming.</p>
+						</div>
+					</li>
+					<li>
+						<div class="col-sm-3">
+						<h4><strong>Transportational manager</strong>
+						<br>
+						2006 - 2011</h4>
+						</div>
+						<div class="col-sm-9">
+							<h4>DentAll Hungary</h4>
+							<p>Weekly transportation tasks, create and update mailing lists, contact with customers </p>
+						</div>
+					</li>
+				</ul>
+				<h4> Languages </h4>
+				<ul class="slideanim">
+					<li>
+						<div class="col-sm-3">
+						<h4>Hungarian</h4>
+						</div>
+						<div class="col-sm-9">
+							<h4>Native speaker </h4>
+						</div>
+					</li>
+					<li>
+						<div class="col-sm-3">
+						<h4>English</h4>
+						</div>
+						<div class="col-sm-9">
+							<h4>(ILR Level 2 -  Limited working proficiency)</h4>
+						</div>
+					</li>
+					<li>
+						<div class="col-sm-3">
+						<h4>Latin</h4>
+						</div>
+						<div class="col-sm-9">
+							<h4>(ILR Level 0 - No proficiency)</h4>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="col-sm-5 skills">
+			<h4> Skills </h4>
+			<ul class="slideanim">
+				<li>
+					<div class="col-sm-12">
+						<h4><strong>Programing languages</strong></h4>
+						<p>html5, css3, LESS, javascript (three.js, babylon.js, angular.js, grunt.js), php5, C++, VBA</p>
+					</div>
+					<div class="col-sm-12">
+						<h4><strong>Frameworks</strong></h4>
+						<p>Bootstrap, Foundation, iceCream</p>
+					</div>
+					<div class="col-sm-12">
+						<h4><strong>Content Management Systems </strong></h4>
+						<p>Wordpress, Drupal</p>
+					</div>
+					<div class="col-sm-12">
+						<h4><strong>Version Controll </strong></h4>
+						<p>Git</p>
+					</div>
+					<div class="col-sm-12">
+						<h4><strong>Desktop applications </strong></h4>
+						<p>MS Office (with advanced Excel), MySQL, WAMP, WxMaxima, Maple, R, Octave</p>
+					</div>
+					<div class="col-sm-12">
+						<h4><strong>Graphic and Prototyping </strong></h4>
+						<p>Photoshop, Paint Shop Pro, Axure, Xara web designer, Layoutit</p>
+					</div>
+				</li>
+			</ul>
+			
+			<h4> Workshops </h4>
+			<ul class="slideanim">
+				<li>
+					<div class="col-sm-12">
+						<h4><strong>TEDxYouth@Sziget - 2014</strong></h4>
+						<p>Speaker</p>
+					</div>
+				</li>
+				<li>
+					<div class="col-sm-12">
+						<h4><strong>Open University@Csobánka - 2014</strong></h4>
+						<p>Speaker, workshop demonstrator</p>
+					</div>
+				</li>
+				<li>
+					<div class="col-sm-12">
+						<h4><strong>TEDxYouth@Budapest - 2014</strong></h4>
+						<p>Speaker</p>
+					</div>
+				</li>
+				<li>
+					<div class="col-sm-12">
+						<h4><strong><a href="http://www.maglodi-hirhatar.hu/index_cikk.php?hh=egy-nap-a-tudomanyert" target="blank">One day for science - 2014</a></strong></h4>
+						<p>Demonstrator, organizer</p>
+					</div>
+				</li>
+				<li>
+					<div class="col-sm-12">
+						<h4><strong>Science and Magic day - 2011</strong></h4>
+						<p>Demonstrator</p>
+					</div>
+				</li>
+				<li>
+					<div class="col-sm-12">
+						<h4><strong>György Kulin Astronomical workshop - 2002 - 2015</strong></h4>
+						<p>Founder, demonstrator</p>
+					</div>
+				</li>
+			</ul>
+			<h4> Hobbies </h4>
+			<ul class="slideanim">
+				<li>
+					<div class="col-sm-12">
+						<p>Astronomy, photography, tutoring</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center" id="projects">    
+
+	  <div class="text-center">
+		<h2>Projects</h2>
+		<h4>Just some of my projects (mostly foundation), for full list please contact with me.</h4>
+	  </div>
+	  <div class="row slideanim">
+		<div class="col-sm-3">
+		  <div class="panel panel-default text-center">
+			<div class="panel-heading">
+			  <h4>Occult theme</h4>
+			</div>
+			<div class="panel-body">
+				<a href="includes/images/projects/layout.png" target="_blank"><img src="includes/images/projects/layout.png" class="img-thumbnail responsive" width="110px" /></a>
+			</div>
+			<div class="panel-footer plan">
+			  <span class="label label-primary">Foundation</span><br>  
+			</div>
+		  </div>
+		</div>
+		<div class="col-sm-3">
+		  <div class="panel panel-default text-center">
+			<div class="panel-heading">
+			  <h4>Language school</h4>
+			</div>
+			<div class="panel-body">
+				<a href="includes/images/projects/language.png" target="_blank"><img src="includes/images/projects/language.png" class="img-thumbnail responsive"  /></a>
+			</div>
+			<div class="panel-footer plan">
+			  <span class="label label-primary">Foundation</span><br>
+			</div>
+		  </div>
+		</div>
+		<div class="col-sm-3">
+		  <div class="panel panel-default text-center">
+			<div class="panel-heading">
+			  <h4>Macro Maiden social theme</h4>
+			</div>
+			<div class="panel-body">
+				<a href="includes/images/projects/nutrition.png" target="_blank"><img src="includes/images/projects/nutrition.png" class="img-thumbnail responsive"  /></a>
+			</div>
+			<div class="panel-footer plan">
+			  <span class="label label-primary">Foundation</span><br>
+			</div>
+		  </div>
+		</div>
+		<div class="col-sm-3">
+		  <div class="panel panel-default text-center">
+			<div class="panel-heading">
+			  <h4>Macro Maiden blog</h4>
+			</div>
+			<div class="panel-body">
+				<a href="includes/images/projects/nutrition_blog.png" target="_blank"><img src="includes/images/projects/nutrition_blog.png" class="img-thumbnail responsive" width="110px"/></a>
+			</div>
+			<div class="panel-footer plan">
+			  <span class="label label-primary">Foundation</span><br>
+			</div>
+		  </div>
+		</div>
+		
+	  </div>
+	  <div class="row slideanim">
+		  <div class="col-sm-3">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h4>Bike shop template</h4>
+				</div>
+				<div class="panel-body">
+					<a href="includes/images/projects/bikes.png" target="_blank"><img src="includes/images/projects/bikes.png" class="img-thumbnailresponsive" width="105px" /></a>
+				</div>
+				<div class="panel-footer plan">
+				  <span class="label label-primary">Foundation</span><br>
+				</div>
+			  </div>
+			</div>
+					  <div class="col-sm-3">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h4>Everest arts template</h4>
+				</div>
+				<div class="panel-body">
+					<a href="includes/images/projects/everestarts.png" target="_blank"><img src="includes/images/projects/everestarts.png" class="img-thumbnail responsive" width="240px"/></a>
+				</div>
+				<div class="panel-footer plan">
+				  <span class="label label-primary">Foundation</span><br>
+				</div>
+			  </div>
+			</div>
+			<div class="col-sm-3">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h4>Cleaning company</h4>
+				</div>
+				<div class="panel-body">
+					<a href="includes/images/projects/ultimatefinish.png" target="_blank"><img src="includes/images/projects/ultimatefinish.png" class="img-thumbnail responsive" width="115px"/></a>
+				</div>
+				<div class="panel-footer plan">
+				  <span class="label label-primary">Foundation</span><br>
+				</div>
+			  </div>
+			</div>
+			<div class="col-sm-3">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h4>Adclick </h4>
+				</div>
+				<div class="panel-body">
+					<a href="includes/images/projects/adclick.png" target="_blank"><img src="includes/images/projects/adclick.png" class="img-thumbnail responsive" width="165px"/></a>
+				</div>
+				<div class="panel-footer plan">
+				  <span class="label label-primary">Foundation</span><br>
+				</div>
+			  </div>
+			</div>
+	  </div>
+	  <div class="row slideanim">
+		  <div class="col-sm-3">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h4>Nosztalgia bakery</h4>
+				</div>
+				<div class="panel-body">
+					<a href="includes/images/projects/nosztalgia.png" target="_blank"><img src="includes/images/projects/nosztalgia.png" class="img-thumbnail responsive" width="110px" /></a>
+				</div>
+				<div class="panel-footer plan">
+				  <span class="label label-success">simple html css</span><br>
+				</div>
+			  </div>
+			</div>
+					  <div class="col-sm-3">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h4>B2B </h4>
+				</div>
+				<div class="panel-body">
+					<a href="includes/images/projects/concept.png" target="_blank"><img src="includes/images/projects/concept.png" class="img-thumbnail responsive" width="80px"/></a>
+				</div>
+				<div class="panel-footer plan">
+				  <span class="label label-primary">Foundation</span><br>
+				</div>
+			  </div>
+			</div>
+			<div class="col-sm-3">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h4>Share a drink</h4>
+				</div>
+				<div class="panel-body">
+					<a href="includes/images/projects/drink.png" target="_blank"><img src="includes/images/projects/drink.png" class="img-thumbnail responsive" width="140px"/></a>
+				</div>
+				<div class="panel-footer plan">
+				  <span class="label label-primary">Foundation</span><br>
+				</div>
+			  </div>
+			</div>
+			<div class="col-sm-3">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h4>Gezz building managment</h4>
+				</div>
+				<div class="panel-body">
+					<a href="includes/images/projects/gezz_index.png" target="_blank"><img src="includes/images/projects/gezz_index.png" class="img-thumbnail responsive" width="80px"/></a>
+				</div>
+				<div class="panel-footer plan">
+				  <span class="label label-primary">Foundation</span><br>
+				</div>
+			  </div>
+			</div>
+	  </div>
+	   <div class="row slideanim">
+		  <div class="col-sm-3">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h4>MI transport</h4>
+				</div>
+				<div class="panel-body">
+					<a href="includes/images/projects/mitransport.png" target="_blank"><img src="includes/images/projects/mitransport.png" class="img-thumbnail responsive" width="170px" /></a>
+				</div>
+				<div class="panel-footer plan">
+				  <span class="label label-primary">Foundation</span><br>
+				</div>
+			  </div>
+			</div>
+			<div class="col-sm-3">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h4>Online shop template</h4>
+				</div>
+				<div class="panel-body">
+					<a href="includes/images/projects/onlinestore.png" target="_blank"><img src="includes/images/projects/onlinestore.png" class="img-thumbnailresponsive" width="80px"/></a>
+				</div>
+				<div class="panel-footer plan">
+				  <span class="label label-primary">Foundation</span><br>
+				</div>
+			  </div>
+			</div>
+			<div class="col-sm-3">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h4>Save nature</h4>
+				</div>
+				<div class="panel-body">
+					<a href="includes/images/projects/savenature.png" target="_blank"><img src="includes/images/projects/savenature.png" class="img-thumbnail responsive" width="60px"/></a>
+				</div>
+				<div class="panel-footer plan">
+				  <span class="label label-primary">Foundation</span><br>
+				</div>
+			  </div>
+			</div>
+			<div class="col-sm-3">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h4>Smithtan</h4>
+				</div>
+				<div class="panel-body">
+					<a href="includes/images/projects/smithtan.png" target="_blank"><img src="includes/images/projects/smithtan.png" class="img-thumbnail responsive" width="70px"/></a>
+				</div>
+				<div class="panel-footer plan">
+				  <span class="label label-primary">Foundation</span><br>
+				</div>
+			  </div>
+			</div>
+	  </div>
+	   <div class="row slideanim">
+		  <div class="col-sm-4">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h4>Wudplay</h4>
+				</div>
+				<div class="panel-body">
+					<a href="includes/images/projects/wudplay.png" target="_blank"><img src="includes/images/projects/wudplay.png" class="img-thumbnail responsive" width="110px" /></a>
+				</div>
+				<div class="panel-footer plan">
+				  <span class="label label-primary">Foundation</span><br>
+				</div>
+			  </div>
+			</div>
+			<div class="col-sm-4">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h4>Ultimate freedom</h4>
+				</div>
+				<div class="panel-body">
+					<a href="includes/images/projects/ultimatefreedom.png" target="_blank"><img src="includes/images/projects/ultimatefreedom.png" class="img-thumbnail responsive" width="115px"/></a>
+				</div>
+				<div class="panel-footer plan">
+				  <span class="label label-primary">Foundation</span><br>
+				</div>
+			  </div>
+			</div>
+			<div class="col-sm-4">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h4>The running guy blog</h4>
+				</div>
+				<div class="panel-body">
+					<a href="includes/images/projects/runingguy.png" target="_blank"><img src="includes/images/projects/runingguy.png" class="img-thumbnail responsive" width="65px"/></a>
+				</div>
+				<div class="panel-footer plan">
+				  <span class="label label-info">wordpress</span><br>
+				</div>
+			  </div>
+			</div>
+	  </div>
+
+	  
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-4 slideanim" id="contact">
+   <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <p>Feel free to contact with me</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +36 (20)4290138</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> gabor.toth05(at)gmail.com</p>
+    </div>
+	<!--
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>-->
+  </div>
+</div>
+
+</body>
+</html>
